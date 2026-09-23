@@ -1,6 +1,7 @@
 package com.example.billeteramvc.model
 
-object BancoDatos {
-    val listaUsuarios = mutableListOf<Usuario>()
-    var usuarioActual: Usuario? = null
-}
+data class BancoDatos(
+    val saldo: Double = 0.0,
+    val numeroCuenta: String = "",
+    val banco: String = "Banco Estado"
+)
